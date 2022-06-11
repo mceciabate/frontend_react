@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    
+    <title>Frontend III Ejercicio práctico clase 1</title>
+  </head>
+  <body>
+    <div id ="root"> </div>
+    <script tipe="text/javascript">
+    const create = React.createElement; 
+const h1 = create("h1", {key: 1}, "Con lo visto hasta ahora");
+const h2 = create("h2", {key: 2}, "Replica este html");
+const h3 = create("h3", {key: 3}, "usando");
+const h4 = create("h4", {key:4}, "React.js")
+const footer = create("footer", {key: 5}, "Adios!");
+
+const divo = create("div", null, [h1, h2, h3, h4, footer]);
+
+ReactDOM.render(divo, document.getElementById("root"));
+</script>
+    
+  </body>
+</html>
