@@ -1,0 +1,19 @@
+.pokemonCardContainer{
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+};
+
+.sectionCard{
+    border: 5px, solid,  red;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.sectionCard > img {
+    width: 80%;
+}
